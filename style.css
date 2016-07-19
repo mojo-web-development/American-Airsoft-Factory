@@ -4,10 +4,75 @@ a{
   color: white;
 }
 
+a:hover{
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+  color: black;
+}
+
+#aaf{
+  text-align: center;
+  position: relative;
+  font-family: 'Exo';
+  font-size: 400%;
+  padding-top: 300px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
 body{
   margin: 0;
   background-color: #eee;
   width: 100%;
+}
+
+.contentarea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description{
+  font-family: 'Aldrich',sans-serif;
+  display: flex;
+}
+
+    .markdown{
+      font-family: 'Aldrich',sans-serif;
+      text-decoration: line-through;
+      color: red;
+    }
+.button{
+  text-align: center;
+  padding-top: 75px;
+}
+
+input[type="submit"]{
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Aldrich';
+  color: white;
+  background-color: black;
+  transition-duration: 1s;
+  font-size: 130%;
+}
+
+input[type="submit"]:hover{
+  width: 260px;
+  height: 55px;
+  border-radius: 10px;
+  font-family: 'Aldrich';
+  color: white;
+  background-color: #54c2e3;
+  transition-duration: 1s;
+  font-size: 130%;
+}
+
+.logo{
+  float: left;
+  font-size: 200%;
+  font-family: 'Quicksand';
 }
 
 .main_background{
@@ -16,17 +81,25 @@ body{
   background-position: center;
   height: 600px;
   width: 100%;
+  margin: 0;
 }
 
 .navbar{
   width: 100%;
-  justify-content: center;
+  position: fixed;
+}
+
+.navbar1{
+  background-color: grey;
+  height: 40px;
 }
 
   .menu{
     font-family: 'Exo', sans-serif;
     display: flex;
     width: 50%;
+    float:right;
+    margin-right: 5%;
 }
     .home{
       margin: auto;
@@ -35,3 +108,39 @@ body{
     .store{
       margin: auto;
     }
+
+    .cart{
+      margin: auto;
+    }
+
+.title{
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  color: grey;
+  font-family: 'Exo';
+  font-size: 150%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+    .gun{
+      padding:10px;
+    }
+
+    .gun img{
+       border: 2px solid black;
+       transition-duration: 1s:
+    }
+
+    .gun img:hover{
+       border: 10px solid #54c2e3;
+       transition-duration: 1s;
+    }
+
+footer{
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+  margin-top: 100px;
+}
