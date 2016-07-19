@@ -1,0 +1,37 @@
+a{
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+  color: white;
+}
+
+body{
+  margin: 0;
+  background-color: #eee;
+  width: 100%;
+}
+
+.main_background{
+  background-image: url('http://www.airsoftlegend.com/media/wysiwyg/airsoft/a_spring.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+
+.navbar{
+  width: 100%;
+  justify-content: center;
+}
+
+  .menu{
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    width: 50%;
+}
+    .home{
+      margin: auto;
+    }
+
+    .store{
+      margin: auto;
+    }
