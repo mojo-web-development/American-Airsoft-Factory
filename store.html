@@ -1,0 +1,81 @@
+<DOCTYPE! html>
+<html>
+<title>
+  American Airsoft Factory
+</title>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Exo|Quicksand|Aldrich' rel='stylesheet' type='text/css'>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+  var container;
+  var ypos;
+  function parralax (){
+
+    ypos = window.pageYOffset;
+    container = document.getElementById('aaf');
+
+    container.style.top  = (ypos *.2) + 'px';
+      }
+      window.addEventListener("scroll",parralax);
+
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function(){
+      var navbar = $('.navbar');
+      var scroll = $(this).scrollTop();
+      if ( scroll < 25 ){
+        navbar.style.background = "transparent";
+      }
+      else {
+        navbar.style.background = "grey";
+      }
+
+    });
+  </script>
+</head>
+<body>
+  <div class="main_background">
+    <div class="navbar">
+      <div class="logo">
+        AAF
+      </div>
+      <div class="menu">
+        <div class="home">
+          <a href="index.html">home</a>
+        </div>
+        <div class="store">
+          <a href="store.html">store</a>
+        </div>
+        <div class="cart">
+          <a href="store.html">cart</a>
+        </div>
+      </div>
+    </div>
+    <div id="aaf">American Airsoft Factory</div>
+  </div>
+
+
+<footer>
+Copyright American Airsoft Factory
+
+</footer>
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+</DOCTYPE>
