@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 <title>
   American Airsoft Factory
@@ -20,15 +20,24 @@
 
   </script>
   <script type="text/javascript">
+<<<<<<< HEAD
+    //$(document).ready(function scroll (){
+      var scroll = window.pageYOffset;
+      var navbar = $('navbar');
+      //navbar.scroll(function(){
+        if ( scroll > 50 ) { $('navbar').css({"background-color": "black"})
+=======
     $(document).scroll(function(){
       var navbar = $('.navbar');
       var scroll = $(this).scrollTop();
       if ( scroll < 25 ) {
         navbar.style.background = "transparent";
+>>>>>>> origin/master
       }
       else {
-        navbar.style.background = "grey";
+        $('navbar').css({"background-color": "transparent"})
       }
+      });
 
     });
   </script>
