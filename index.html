@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 <title>
   American Airsoft Factory
@@ -21,17 +21,25 @@
 
   </script>
   <script type="text/javascript">
-    $(document).scroll(function(){
-      var navbar = $('.navbar');
-      var scroll = $(this).scrollTop();
-      if ( scroll < 25 ) {
-        navbar.style.background = "transparent";
-      }
-      else {
-        navbar.style.background = "grey";
-      }
+(function scroll (){
+    var doc = $(document),
+    nav = $('.navbar'),
+    lastScrollTop = 0;
 
+    doc.on('scroll', function (){
+      currentScrollTop = $(this).scrollTop();
+
+      if ( currentScrollTop > lastScrollTop ) { nav.addClass('.navbar1');
+
+
+      }
+      else { nav.removeClass('.navbar1');
+
+      }
+      lastScrollTop = currentScrollTop
     });
+
+})();
   </script>
 </head>
 <body>
@@ -49,6 +57,9 @@
         </div>
         <div class="cart">
           <a href="store.html">cart</a>
+        </div>
+        <div class="about">
+          <a href="about.html">about us</a>
         </div>
       </div>
     </div>

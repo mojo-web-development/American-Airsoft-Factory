@@ -34,7 +34,7 @@ body{
 
 .description{
   font-family: 'Aldrich',sans-serif;
-  display: flex;
+  text-align: center;
 }
 
     .markdown{
@@ -69,6 +69,28 @@ input[type="submit"]:hover{
   font-size: 130%;
 }
 
+input[name="cart"]{
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Aldrich';
+  color: white;
+  background-color: black;
+  transition-duration: 1s;
+  font-size: 130%;
+}
+
+input[name="cart"]:hover{
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Aldrich';
+  color: white;
+  background-color: #54c2e3;
+  transition-duration: 1s;
+  font-size: 130%;
+}
+
 .logo{
   float: left;
   font-size: 200%;
@@ -79,6 +101,7 @@ input[type="submit"]:hover{
   background-image: url('http://www.airsoftlegend.com/media/wysiwyg/airsoft/a_spring.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 600px;
   width: 100%;
   margin: 0;
@@ -103,15 +126,23 @@ input[type="submit"]:hover{
     margin-right: 5%;
 }
     .home{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .store{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .cart{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .about{
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
 .title{
@@ -135,7 +166,7 @@ input[type="submit"]:hover{
     }
 
     .gun img:hover{
-       border: 10px solid #54c2e3;
+       border: 5px solid #54c2e3;
        transition-duration: 1s;
     }
 
@@ -144,4 +175,13 @@ footer{
   height: 50px;
   width: 100%;
   margin-top: 100px;
+  font-family: 'Exo';
+  color: white;
+}
+
+.storeTitle{
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Exo', sans-serif;
+  padding: 100px;
 }
