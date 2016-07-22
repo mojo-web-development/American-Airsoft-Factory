@@ -103,15 +103,18 @@ input[type="submit"]:hover{
     margin-right: 5%;
 }
     .home{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .store{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .cart{
-      margin: auto;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
 .title{
@@ -135,7 +138,7 @@ input[type="submit"]:hover{
     }
 
     .gun img:hover{
-       border: 10px solid #54c2e3;
+       border: 5px solid #54c2e3;
        transition-duration: 1s;
     }
 

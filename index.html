@@ -6,6 +6,7 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Exo|Quicksand|Aldrich' rel='stylesheet' type='text/css'>
   <link href="style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
   <script type="text/javascript">
   var container;
   var ypos;
@@ -20,26 +21,25 @@
 
   </script>
   <script type="text/javascript">
-<<<<<<< HEAD
-    //$(document).ready(function scroll (){
-      var scroll = window.pageYOffset;
-      var navbar = $('navbar');
-      //navbar.scroll(function(){
-        if ( scroll > 50 ) { $('navbar').css({"background-color": "black"})
-=======
-    $(document).scroll(function(){
-      var navbar = $('.navbar');
-      var scroll = $(this).scrollTop();
-      if ( scroll < 25 ) {
-        navbar.style.background = "transparent";
->>>>>>> origin/master
-      }
-      else {
-        $('navbar').css({"background-color": "transparent"})
-      }
-      });
+(function scroll (){
+    var doc = $(document),
+    nav = $('.navbar'),
+    lastScrollTop = 0;
 
+    doc.on('scroll', function (){
+      currentScrollTop = $(this).scrollTop();
+
+      if ( currentScrollTop > lastScrollTop ) { nav.addClass('.navbar1');
+
+
+      }
+      else { nav.removeClass('.navbar1');
+
+      }
+      lastScrollTop = currentScrollTop
     });
+
+})();
   </script>
 </head>
 <body>
