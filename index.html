@@ -6,7 +6,9 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Exo|Quicksand|Aldrich' rel='stylesheet' type='text/css'>
   <link href="style.css" type="text/css" rel="stylesheet" />
-  <script type='text/javascript' src='javascript/jquery-3.1.0.min.js'></script>
+  <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript">
   var container;
   var ypos;
@@ -21,25 +23,21 @@
 
   </script>
   <script type="text/javascript">
-(function scroll (){
-    var doc = $(document),
-    nav = $('.navbar'),
-    lastScrollTop = 0;
-
-    doc.on('scroll', function (){
-      currentScrollTop = $(this).scrollTop();
-
-      if ( currentScrollTop > lastScrollTop ) { nav.addClass('.navbar1');
-
-
-      }
-      else { nav.removeClass('.navbar1');
-
-      }
-      lastScrollTop = currentScrollTop
-    });
-
-})();
+  $(document).ready(function(){
+     var scroll_start = 0;
+     var startchange = $('.navbar');
+     var offset = startchange.offset();
+     $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('.navbar').css('background-color', '#333');
+            $('.navbar').css('opacity', '.6');
+         } else {
+            $('.navbar').css('background-color', 'transparent');
+            $('.navbar').css('opacity', '1');
+         }
+     });
+  });
   </script>
 </head>
 <body>
@@ -90,7 +88,7 @@
 
 <footer>
 Copyright American Airsoft Factory
-
+<div class="address">Provo, Utah</div>
 </footer>
 
 

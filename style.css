@@ -111,11 +111,14 @@ input[name="cart"]:hover{
   position: fixed;
   width: 100%;
   z-index: 100;
+  transition-duration: 0.5s;
 }
 
 .navbar1{
   background-color: grey;
   height: 40px;
+  transition-duration: 0.5s;
+  opacity: .6;
 }
 
   .menu{
@@ -166,7 +169,7 @@ input[name="cart"]:hover{
     }
 
     .gun img:hover{
-       border: 5px solid #54c2e3;
+       border: 2px solid #54c2e3;
        transition-duration: 1s;
     }
 
@@ -178,6 +181,11 @@ footer{
   font-family: 'Exo';
   color: white;
 }
+
+  .address{
+    float:right;
+    margin-right: 15px;
+  }
 
 .storeTitle{
   text-align: center;
