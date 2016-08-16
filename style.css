@@ -32,6 +32,11 @@ body{
   justify-content: center;
 }
 
+.contentarea1{
+  text-align: center;
+
+}
+
 .description{
   font-family: 'Aldrich',sans-serif;
   text-align: center;
@@ -105,6 +110,7 @@ input[name="cart"]:hover{
   height: 600px;
   width: 100%;
   margin: 0;
+  position: relative;
 }
 
 .navbar{
@@ -112,6 +118,7 @@ input[name="cart"]:hover{
   width: 100%;
   z-index: 100;
   transition-duration: 0.5s;
+  height: 40px;
 }
 
 .navbar1{
@@ -123,30 +130,10 @@ input[name="cart"]:hover{
 
   .menu{
     font-family: 'Exo', sans-serif;
-    display: flex;
     width: 50%;
     float:right;
     margin-right: 5%;
 }
-    .home{
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    .store{
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    .cart{
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    .about{
-      margin-left: 40px;
-      margin-right: 40px;
-    }
 
 .title{
   text-align: center;
@@ -182,6 +169,37 @@ footer{
   color: white;
 }
 
+li{
+  list-style: none;
+  width: 50px;
+  padding-left:20px;
+  float: left;
+}
+
+.drop{
+  display: none;
+  background-color: #333;
+  transition-duration: .4s;
+}
+
+.drop1{
+  transition-duration: .4s;
+}
+
+.drop2{
+  background-color: #333;
+
+}
+
+ul li li{
+  background-color: #333;
+}
+
+ul li li:hover{
+  background-color: #666;
+  display: block;
+}
+
   .address{
     float:right;
     margin-right: 15px;
@@ -192,4 +210,13 @@ footer{
   font-size: 300%;
   font-family: 'Exo', sans-serif;
   padding: 100px;
+}
+
+.itempopup{
+  z-index: 100;
+  background-color: #333;
+  opacity: .6;
+  background-position: center;
+  background-size: cover;
+  z-index: 90;
 }
